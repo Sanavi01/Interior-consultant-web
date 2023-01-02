@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500&family=Montserrat:wght@100&display=swap');
+:root{
+    --background-color: #181719;
+    --text-primary-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-primary-color);
+}
+
+html{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    width: 1440px;
+    padding: clamp(19px, 3vw, 46px) clamp(12px, 3vw, 76px);
+    background-color: var(--background-color);
+}
+
+/* -------------- HEADER ---------------  */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    border: 1px white solid;
+    padding: 10px;
+}
+
+.logo h3 {
+    font-family: 'Crimson Pro', serif;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 86px;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.nav-li-a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: transparent solid 1px;
+    transition: border-bottom 0.2s ;
+}
+
+.nav-li-a:hover{
+    border-bottom: white solid 1px;
+}
