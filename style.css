@@ -28,6 +28,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 150px;
 }
 
 .logo{
@@ -60,4 +61,91 @@ nav ul{
 
 .nav-li-a:hover{
     border-bottom: white solid 1px;
+}
+
+/* --- MAIN ---  */
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+   
+}
+
+.summary{
+    width: clamp(300px, 30%, 410px);
+}
+
+.summary h1{
+    font-family: 'Lora';
+    font-size: clamp(40px, 4vw, 48px);
+    margin-bottom: 40px;
+}
+
+.summary p{
+    font-family: 'Montserrat';
+    font-size: clamp(18px, 2vw, 24px);
+    font-weight: 600;
+    margin-bottom: 48px;
+}
+
+.summary h3{
+    font-family: 'Lora';
+    font-size: clamp(14px, 4vw, 18px);
+}
+
+.image-designer {
+    position: relative;
+    width: clamp(500px, 60%, 820px);
+}
+
+.image-designer img {
+    z-index: 0;
+    width: 100%;
+}
+
+.designer-card{
+    position: absolute;
+    z-index: 1;
+    bottom: -55px;
+    right: 25px;
+    width: clamp(300px, 50%, 410px);
+    padding: 10px;
+    background: #181719;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.designer-profile{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.profession{
+    font-size: 12px;
+}
+
+.designer-profile img {
+    width: 50px;
+    border-radius: 50px;
+}
+
+.date{
+    font-family: 'Lora';
+    font-size: clamp(18px, 2vw, 24px);
+    width: 287px;
 }
