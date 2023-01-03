@@ -149,3 +149,17 @@ main{
     font-size: clamp(18px, 2vw, 24px);
     width: 287px;
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #A9A9A9
+}
+
+footer p a{
+    color: #FFFFFF;
+    font-weight: bolder;
+}
